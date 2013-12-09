@@ -24,8 +24,8 @@
        'arrow_height' : 20,
        'arrow_width' : 20,
        'animation_duration_ms' : 300,
-       'event_in':'mouseover',
-       'event_out':'mouseout',
+       'event_in':'mouseenter',
+       'event_out':'mouseleave',
        'hover_delay' : 0
      }; 
      if (settings) $.extend(config, settings);
