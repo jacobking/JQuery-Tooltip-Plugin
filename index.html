@@ -47,7 +47,7 @@
 	
   
   <link rel="stylesheet" href="stylesheets/jquery.tooltip/jquery.tooltip.css" type="text/css" />
-  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/jquery.tooltip.js"></script>
   <script type="text/javascript">
     $j = jQuery.noConflict();
@@ -138,6 +138,28 @@ $("div.your_selector").tooltip();
         Help is on the way.
       </div>
     </div>
+    
+    <h4>
+      Configuration Options
+    </h4>
+<pre>
+// Configuration options with defaults listed below.
+'dialog_content_selector' : 'div.tooltip_description'
+'animation_distance' : 50
+'opacity' : 0.85
+'arrow_left_offset' : 70
+'arrow_top_offset' : 50
+'arrow_height' : 20
+'arrow_width' : 20
+'animation_duration_ms' : 300
+'event_in':'mouseenter'
+'event_out':'mouseleave'
+'hover_in_delay' : 0
+'hover_out_delay' : 0
+</pre>
+      
+      
+    
     </p>
 
     <h2>License</h2>
