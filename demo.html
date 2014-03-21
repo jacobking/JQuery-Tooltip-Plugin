@@ -5,11 +5,12 @@
   <head>
     <style type="text/css">
       * { font-family: monaco; color: white; }
-      div.item { width:100px; height:50px; background-color: maroon; text-align:center; padding-top:25px; }
+      div.item { min-width:100px; min-height:50px; background-color: maroon; text-align:center; line-height:25px; padding:10px;}
       div#item_1 { position: absolute; top: 50px; left: 50px; }
       div#item_2 { position: absolute; top: 500px; left: 0px; }      
       div#item_3 { position: absolute; top: 0px; left: 500px; }            
       div#item_4 { position: absolute; top: 500px; left: 500px; }                  
+      div#item_5 { position: absolute; top: 800px; left: 500px; }
     </style>
     <link rel="stylesheet" href="stylesheets/jquery.tooltip/jquery.tooltip.css" type="text/css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -49,6 +50,13 @@
         Item 4
         <div class="tooltip_description" style="display:none" title="Item 4 Description">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+      </div>
+
+      <div id="item_5" class="item tooltipleft">
+        Item 5 <br/> Force Left
+        <div class="tooltip_description" style="display:none" title="Item 4 Description">
+          Just add a CSS Class 'tooltipleft' to disable the auto-direction and have the tip come in from left with right-arrow.
         </div>
       </div>
 

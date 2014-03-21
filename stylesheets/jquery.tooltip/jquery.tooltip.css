@@ -1,4 +1,4 @@
-div.jquery-gdakram-tooltip { 
+div.jquery-gdakram-tooltip {
   width: 340px;
   color: white;
   font-size: 12px;
@@ -9,8 +9,8 @@ div.jquery-gdakram-tooltip {
 	display: none;
 }
 
-div.jquery-gdakram-tooltip div.content { 
-  -moz-border-radius: 1em; 
+div.jquery-gdakram-tooltip div.content {
+  -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
   background-color: #671329;
   width: 280px;
@@ -51,4 +51,12 @@ div.jquery-gdakram-tooltip div.left_arrow {
   left: 0px;
 }
 
-
+div.jquery-gdakram-tooltip div.right_arrow {
+  float:right;
+  background : url('images/right_arrow.png') 0px 0px no-repeat;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 40px;
+  right: 20px;
+}
