@@ -33,16 +33,20 @@
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 
     /** tooltip styles **/
-    div.item { width:100px; height:50px; 
-      background-color: #152F15; text-align:center; padding-top:25px; color: white;
+    div.item { 
+      min-width:100px; 
+      min-height:50px; 
+      background-color: #152F15; text-align:center; line-height:50px; color: white; padding: 10px;
       -moz-border-radius: 0.5em; 
       -webkit-border-radius: 0.5em;      
+      border-radius: 0.5em;
     }
     div.tooltip h1 { color: white; }
     div#item_1 { position: absolute; top: 100px; left: 10px; }
     div#item_2 { position: absolute; top: 500px; left: 10px; }      
     div#item_3 { position: absolute; top: 0px; left: 170px; }            
     div#item_4 { position: absolute; top: 400px; left: 170px; }
+    div#item_5 { position: absolute; top: 400px; right: 150px; }
 	</style>
 	
   
@@ -107,6 +111,23 @@
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
       </div>
+      
+      <div id="item_5" class="item tooltipleft">
+        Ex. 5 Force Direction
+        <div class="tooltip_description" style="display:none" title="Item 5 Description">
+          Forcing tooltip to come from the left without auto-direction with the 'tooltipleft' CSS class.
+          Experiment with the following CSS classes:
+          <ul>
+            <li>tooltiptopright</li>
+            <li>tooltipbottomright</li>
+            <li>tooltiptop</li>
+            <li>tooltipleft</li>            
+            <li>tooltipbottom</li>                        
+          </ul>
+        </div>
+      </div>
+      
+      
     </p>
 
     <h2>Usage</h2>
@@ -149,6 +170,7 @@ $("div.your_selector").tooltip();
 'opacity' : 0.85
 'arrow_left_offset' : 70
 'arrow_top_offset' : 50
+'arrow_right_offset' : 20
 'arrow_height' : 20
 'arrow_width' : 20
 'animation_duration_ms' : 300
